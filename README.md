@@ -1,5 +1,5 @@
 # fluesterpost
-A Flask application to spread the word you give it.
+A super slim Flask application to spread the word you give it.
 
 ## Endpoints
 
@@ -7,6 +7,17 @@ At the moment the following APIs are supported. To use it, enter the needed info
 
 * Twitter API (https://apps.twitter.com/)
 * Slack Webhooks (https://api.slack.com/incoming-webhooks)
+
+## How
+
+Send post requests to the Flask endpoint of your choice with the following information
+
+```
+{
+ 'text': 'The text to send',
+ 'token': '<the_token_if_set_in_settings.py>'
+}
+```
 
 ## Example
 
