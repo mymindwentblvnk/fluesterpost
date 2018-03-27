@@ -1,6 +1,5 @@
 import requests
 
-from flask import jsonify, abort
 from flask_restful import Resource, reqparse
 
 from twython import Twython
@@ -33,10 +32,10 @@ class Twitter(DefaultResource):
                           settings.TWITTER_APP_SECRET,
                           settings.TWITTER_OAUTH_TOKEN,
                           settings.TWITTER_OAUTH_TOKEN_SECRET)
-        return twitter.update_status(status=text[:settings.TWITTER_STATUS_LENGTH])
+        twitter.update_status(status=text[:settings.TWITTER_STATUS_LENGTH])
 
 
 class Slack(DefaultResource):
 
     def fluester(self, text):
-        return requests.post(settings.SLACK_WEBHOOK_URL, json={'text': text})
+        requests.post(settings.SLACK_WEBHOOK_URL, json={'text': text})
