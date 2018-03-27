@@ -23,7 +23,7 @@ Send post requests to the Flask endpoint of your choice with the following infor
 
 * Create a environment with `make env`
 * Run server with `python app.py`
-* Curl e. g. the Twitter endpoint with `curl -d '{"text":"This is my new Twitter status.", "token": "<THE_TOKEN>"}' -H "Content-Type: application/json" -X POST http://localhost:5000/twitter`
+* `make curl text="This is my new Twitter status." token="<THE_TOKEN>" host=localhost:5000 endpoint=twitter`
 
 ![Profit](https://i.imgur.com/6M8PjSQ.png)
 
