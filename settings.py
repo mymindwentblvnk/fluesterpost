@@ -1,7 +1,7 @@
 import os
 
 
-TOKEN = os.environ.get('FLUESTERPOST_TOKEN') if os.environ.get('FLUESTERPOST_TOKEN') else ''  # If set, post request has to send exactly this token
+TOKEN = os.environ.get('TOKEN') if os.environ.get('TOKEN') else ''  # If set, post request has to send exactly this token
 
 
 # Twitter API Information
