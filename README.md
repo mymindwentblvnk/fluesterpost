@@ -30,6 +30,7 @@ Send post requests to the Flask endpoint of your choice with the following infor
 ## TODO
 
 * More endpoints to come
+  * Discord
   * Telegram
   * Twilio
   * E-Mail
