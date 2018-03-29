@@ -3,7 +3,7 @@ import requests
 from flask_restful import Resource, reqparse
 
 from twython import Twython
-from twilio.rest import import Client
+from twilio.rest import Client
 
 import settings
 
