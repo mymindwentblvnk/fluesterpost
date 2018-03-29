@@ -1,5 +1,7 @@
+pudb
+ptpython
 Flask==0.12.2
 Flask-RESTful==0.3.6
 gunicorn==19.7.1
 twython==3.6.0
-pudb==2017.1.4
+twilio==6.11.0

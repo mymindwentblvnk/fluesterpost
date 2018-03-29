@@ -3,6 +3,7 @@ import requests
 from flask_restful import Resource, reqparse
 
 from twython import Twython
+from twilio.rest import import Client
 
 import settings
 
@@ -39,3 +40,13 @@ class Slack(DefaultResource):
 
     def fluester(self, text):
         requests.post(settings.SLACK_WEBHOOK_URL, json={'text': text})
+
+
+class Twilio(DefaultResource):
+
+    def fluester(self, text):
+        client = Client(settings.TWILIO_ACCOUNT_SID,
+                        settings.TWILIO_AUTH_TOKEN)
+        client.api.messages.create(to=settings.TWILIO_TO_NUMBER,
+                                   from_=settings.TWILIO_FROM_NUMBER,
+                                   body=text)
