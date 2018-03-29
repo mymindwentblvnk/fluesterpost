@@ -7,6 +7,7 @@ At the moment the following APIs are supported. To use it, enter the needed info
 
 * Twitter API (https://apps.twitter.com/)
 * Slack Webhooks (https://api.slack.com/incoming-webhooks)
+* Twilio (https://www.twilio.com/sms)
 
 ## How
 
@@ -32,7 +33,6 @@ Send post requests to the Flask endpoint of your choice with the following infor
 * More endpoints to come
   * Discord
   * Telegram
-  * Twilio
   * E-Mail
   * Et Cetera
 * Make use of environment variables
