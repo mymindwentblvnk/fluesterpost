@@ -14,10 +14,3 @@ TWITTER_STATUS_LENGTH = 280
 
 # Slack
 SLACK_WEBHOOK_URL = os.environ.get('SLACK_WEBHOOK_URL') if os.environ.get('SLACK_WEBHOOK_URL') else ''
-
-
-# Twilio
-TWILIO_ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID') if os.environ.get('TWILIO_ACCOUNT_SID') else ''
-TWILIO_AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN') if os.environ.get('TWILIO_AUTH_TOKEN') else ''
-TWILIO_FROM_NUMBER = os.environ.get('TWILIO_FROM_NUMBER') if os.environ.get('TWILIO_FROM_NUMBER') else ''
-TWILIO_TO_NUMBER = os.environ.get('TWILIO_TO_NUMBER') if os.environ.get('TWILIO_TO_NUMBER') else ''
