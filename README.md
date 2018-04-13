@@ -7,7 +7,6 @@ At the moment the following APIs are supported. To use it, enter the needed info
 
 * Twitter API (https://apps.twitter.com/)
 * Slack Webhooks (https://api.slack.com/incoming-webhooks)
-* Twilio (https://www.twilio.com/sms)
 
 ## How
 
