@@ -26,13 +26,3 @@ Send post requests to the Flask endpoint of your choice with the following infor
 * `make curl text="This is my new Twitter status." token="<THE_TOKEN>" host=localhost:5000 endpoint=twitter`
 
 ![Profit](https://i.imgur.com/6M8PjSQ.png)
-
-## TODO
-
-* More endpoints to come
-  * Discord
-  * Telegram
-  * E-Mail
-  * Et Cetera
-* Make use of environment variables
-* Tests
